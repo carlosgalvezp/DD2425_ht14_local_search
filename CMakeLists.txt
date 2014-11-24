@@ -166,5 +166,8 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(local_search src/local_search.cpp)
-target_link_libraries(local_search ${catkin_LIBRARIES})
+add_executable(local_search_astar src/local_search_astar.cpp)
+target_link_libraries(local_search_astar ${catkin_LIBRARIES})
+
+add_executable(local_search_BFS src/local_search_BFS.cpp)
+target_link_libraries(local_search_BFS ${catkin_LIBRARIES})
